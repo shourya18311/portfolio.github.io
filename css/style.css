@@ -1,0 +1,1236 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+   body{line-height:1}
+   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+   nav ul{list-style:none}
+   blockquote,q{quotes:none}
+   blockquote:before,blockquote:after,q:before,q:after{content:none}
+   a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+   mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+   del{text-decoration:line-through}
+   abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+   table{border-collapse:collapse;border-spacing:0}
+   hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+   input,select{vertical-align:middle}
+   li{list-style:none}
+  
+   /* =============================================================================
+      My CSS
+      ========================================================================== */
+   
+   /* ---- base ---- */
+
+   *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+      :root {
+          --bg: #EFE7E3;
+          --text: #6C4C35;
+          --ctext: #FFFFFF;
+          --card1: #6CBCB1;
+          --card2: #90B8D2;
+          --card3: #DFB468;
+          --ftext: #000000;
+          --bg1: #D6B89B;
+          --box1: #F6DDB5;
+          --box2: #E3A18B;
+          --case1: #90b8d2;
+      }
+
+      .xyz {
+          font-style: bold;
+          font-size: 4vw;
+          color: #6C4C35;
+          font-family: 'Playfair Display', sans-serif;
+          margin-right: 3.5vw;
+          margin-left: -1.5vw;
+
+      }
+
+      .xyz:hover {
+          color: burlywood;
+      }
+
+
+
+   
+   html,body{ 
+     width:100%;
+     height:100%;
+     background:#EFE7E3;
+   }
+   
+   html{
+     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   }
+   
+   body{
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    height: 100%;
+    
+   }
+   
+   canvas{
+     display:block;
+     vertical-align:bottom;
+   }
+
+   .designhead {
+    color: white;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 6vw;
+    margin-left: 2vw;
+    margin-top: -50vh;
+    padding: 0px 0px;
+   
+   
+    
+}
+
+.dropmenu {
+    background-color: transparent;
+    
+  
+    
+}
+
+.change {
+    color: white;
+    font-family: 'Canela', sans-serif;
+    font-weight: 10vw;
+    font-size: 12vw;
+    color: peachpuff;
+    padding: 0px 0px;
+    margin-top: 1.5vh;
+    z-index: 1;
+    margin-left: 2%;
+    
+}
+
+.button {
+    margin-left: 72vw;
+    color: #6C4C35;
+    position: relative;
+    font-size: 5px;
+    outline: none;
+   
+    
+
+}
+
+.custom-toggler .navbar-toggler-icon {
+         
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(108, 76, 53)'  stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  font-size: 10px;
+  outline: none;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(108, 76, 53);
+  outline: none;
+
+}
+
+.logo{
+  font-size: 6vw; color: #6C4C35; opacity: 100; font-family:  'Playfair Display' , sans-serif; font-weight: lighter; margin-left: 4%;
+}
+
+.bg{
+  background-image: url("cover@3x.png");
+  background-size: cover;
+  height: 100%
+}
+.case1{
+  margin-top: 200px; margin-left: 200px; 
+}
+.case1_size{
+  width: 1000px;
+
+}
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+  width: 100%;
+
+  
+}
+
+.card {
+  position: relative;
+  height: 46vh;
+  width: 35vw;
+  padding: 40px;
+  margin-top: 7vh;
+  transform-style: preserve-3d;
+  box-shadow: 3px 3px 4px 4px #776f6f;
+
+
+ 
+}
+
+.card .title {
+  position: relative;
+  z-index: 2;
+  transform: translateZ(20px);
+}
+
+.card .credits {
+  font-size: 1.2vh;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  transform: translateZ(20px);
+}
+
+.card .bg2 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../css/cover2.png);
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.container1{
+  background-color: #90b8d2; 
+  height: 60vh; width: 45vw; 
+  margin-left: 8vw; 
+  margin-top: 4vh;
+}
+
+.maintext{
+  color:black;  
+  font-family:'Canela', serif;  
+  font-size:  70px;
+   margin-left: 50vw; 
+  padding: 0px 0px; z-index: 1;  
+  width: 250px; height: 200px;
+}
+
+.p1{
+  margin-left: 54vw; 
+ 
+  width: 35vw; font-size: 1.2vw; 
+  font-family:'GT America Light' , open sans; 
+   color: #222222; z-index: 1;
+   margin-top: -10vh;
+ }
+
+ .p1_1{
+  margin-left: 54vw;
+ 
+  max-width: 630px; 
+  font-size: 20px; 
+  font-family:'GT America Light' , open sans;
+   vertical-align: baseline; 
+   color: #C6B9B1; z-index: 1;
+ }
+
+
+ .fa {
+  padding: 1vw;
+  font-size: 4vw;
+ 
+  text-align: center;
+  text-decoration: none;
+  border-radius: 18%;
+  margin-top: 55vh;
+}
+
+
+.fa:hover {
+  opacity: 1;
+  color: burlywood;
+}
+
+.fa-facebook {
+
+
+  color: #6C4C35;
+}
+
+.fa-linkedin {
+
+
+  color: #6C4C35;
+}
+
+.fa-instagram {
+
+  color: #6C4C35;
+}
+
+.fa-medium {
+
+  color: #6C4C35;
+}
+
+
+
+.bgline{
+  margin-left: 30%;
+   width:40%;
+   margin-block-end: 30%; 
+   margin-top: 1%; 
+   border: 5px solid #6C4C35; 
+   opacity: 100; 
+   z-index: 1;
+   margin-bottom: 5vh;
+}
+
+.distancebetweencontainer{
+  margin-top: 47vh;
+}
+
+.textdiv{
+  margin-top: -53vh;
+}
+
+
+.container2{
+  background-color: #F6DDB5; 
+  height: 60vh; 
+  width: 45vw; 
+
+ margin-top: 4vh;
+ margin-left: 45%;
+}
+
+.maintext1{
+  color:black;  
+  font-family:'Canela', serif;  
+  font-size:  70px;
+   margin-left: 35vw; 
+  padding: 0px 0px; z-index: 1;  
+  width: 250px; height: 200px;
+}
+
+.p2{
+  margin-left: 7.9vw; 
+  text-align: right;
+ 
+  width: 35vw; font-size: 1.2vw; 
+  font-family:'GT America Light' , open sans; 
+   color: #222222; z-index: 1;
+   margin-top: -12vh;
+ }
+
+ .p1_2{
+  margin-left: 30vw; 
+ 
+  max-width: 630px; 
+  font-size: 20px; 
+  font-family:'GT America Light' , open sans;
+   vertical-align: baseline; 
+   color: #C6B9B1; z-index: 1;
+ }
+
+
+
+
+.card .bg3 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../css/cover2.png);
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+
+.distancebetweencontainer1{
+  margin-top: 50vh;
+}
+
+
+
+
+
+
+
+@media(max-width:1500px ){
+  .bg{
+   
+    background-attachment: fixed;
+  }
+  .container1{
+  
+    margin-top: 3%;
+    padding: 0;
+  
+    margin-left: 3%;
+    width: 54vw;
+    height: 67.5vh;
+  
+  }
+  
+  .designhead{
+    margin-top: -44vh;
+    font-size: 8vw;
+  }
+  .change{
+    font-size: 14.5vw;
+    margin-top: 0.6vw;
+    max-width: 100px;
+  }
+  
+  .wrapper{
+  
+   margin-top: 0%;
+    margin-right: 0%;
+  }
+  .card{
+    margin-top: 8%;
+    width: 45vw;
+    height: 52vh;
+    box-shadow: 3px 3px 2px 2px #776f6f;
+   
+  }
+  
+  .maintext{
+    margin-top: -61vh;
+   margin-left: 54.4vw;
+   max-height: 6vh;
+   font-size: 4vw;
+   max-width: 20vw;
+  
+  }
+  .p1{
+    
+    margin-left: 60vw;
+    font-size: 1.3vw;
+    margin-top:1.5vh;
+    width: 37vw;
+    
+  }
+  .p1_1{
+    margin-left: 60vw;
+    margin-top: -0.5vh;
+  
+    font-size: 1.5vw;
+  }
+  
+  .logo{
+    font-size: 7vw;
+  }
+  .custom-toggler .navbar-toggler-icon
+  {
+    font-size: 3.5vw;
+  }
+  .web{
+    display: none;
+  }
+  
+  .icon{
+    margin-left: 32%;
+  }
+  .bgline{
+    margin-left: 20vw;
+  }
+  .fa{
+    font-size: 7vw;
+  }
+  .distancebetweencontainer{
+    margin-top: 55vh;
+  }
+
+.textdiv{
+  margin-top: unset;
+}
+.container2{
+  background-color: #F6DDB5; 
+  height: 67.4vh; 
+  width: 54vw; 
+
+ margin-top: 4vh;
+ margin-left: 41vw;
+}
+
+.maintext1{
+  margin-top: -58.5vh;
+ margin-left: 30vw;
+ max-height: 6vh;
+ font-size: 4vw;
+ max-width: 20vw;
+
+}
+.p2{
+  
+  margin-left: 2.3vw;
+  font-size: 1.3vw;
+  margin-top: 1.5vh;
+  width: 37vw;
+  
+}
+.p1_2{
+  margin-left: 23.5vw;
+  margin-top: -0.5vh;
+
+  font-size: 1.5vw;
+}
+
+.fa{
+  margin-top: 55vh;
+  font-size: 3vw;
+}
+.bgline{
+  border: 5px;
+  
+  margin-left: 30%;
+   width:40%;
+   margin-block-end: 30%; 
+ 
+}
+.shift1{
+  margin-right: 00vw;
+}
+
+.button{
+  margin-left: 75vw;
+  font-size: 1vw;
+}
+.xyz {
+  font-style: bold;
+  font-size: 4vw;
+  color: #6C4C35;
+  font-family: 'Playfair Display', sans-serif;
+  margin-right: 6vw;
+  margin-left: -2.5vw;
+
+}
+
+.distancebetweencontainer1{
+  margin-top: 53vh;
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1128px) {
+
+  .bg{
+   
+    background-attachment: fixed;
+  }
+  .container1{
+  
+    margin-top: 3%;
+    padding: 0;
+  
+    margin-left: 3%;
+    width: 55vw;
+  
+
+   
+    height: 55vh;
+  
+  }
+  
+  .designhead{
+    margin-top: -44vh;
+    font-size: 8vw;
+  }
+  .change{
+    font-size: 13.5vw;
+    margin-top: 0.6vw;
+    max-width: 100px;
+  }
+  
+  .wrapper{
+  
+   margin-top: 0%;
+    margin-right: 0%;
+  }
+  .card{
+    margin-top: 8%;
+    width: 45vw;
+    height: 42.5vh;
+    box-shadow: 3px 3px 2px 2px #776f6f;
+   
+  }
+  
+  .maintext{
+    margin-top: -48.5vh;
+   margin-left: 55.4vw;
+   max-height: 6vh;
+   font-size: 4vw;
+   max-width: 20vw;
+  
+  }
+  .p1{
+    
+    margin-left: 60vw;
+    font-size: 1.3vw;
+    margin-top:0.5vh;
+    width: 37vw;
+    
+  }
+  .p1_1{
+    margin-left: 60vw;
+    margin-top: -0.5vh;
+  
+    font-size: 1.5vw;
+  }
+  
+  .logo{
+    font-size: 7vw;
+  }
+  .custom-toggler .navbar-toggler-icon
+  {
+    font-size: 3.5vw;
+  }
+  .web{
+    display: none;
+  }
+  
+  .icon{
+    margin-left: 32%;
+  }
+  .bgline{
+    margin-left: 20vw;
+  }
+  .fa{
+    font-size: 7vw;
+  }
+  .distancebetweencontainer{
+    margin-top: 45vh;
+  }
+
+.textdiv{
+  margin-top: unset;
+}
+.container2{
+  background-color: #F6DDB5; 
+  height: 55vh; 
+  width: 54vw; 
+
+ margin-top: 4vh;
+ margin-left: 41vw;
+}
+
+.maintext1{
+  margin-top: -46.5vh;
+ margin-left: 29.5vw;
+ max-height: 6vh;
+ font-size: 4vw;
+ max-width: 20vw;
+
+}
+.p2{
+  
+  margin-left: 2vw;
+  font-size: 1.3vw;
+  margin-top: 1vh;
+  width: 37vw;
+  
+}
+.p1_2{
+  margin-left: 22.8vw;
+  margin-top: -0.5vh;
+
+  font-size: 1.5vw;
+}
+
+.fa{
+  margin-top: 38vh;
+  font-size: 3vw;
+}
+.bgline{
+  border: 5px;
+  
+  margin-left: 30%;
+   width:40%;
+   margin-block-end: 30%; 
+ 
+}
+.shift1{
+  margin-right: 00vw;
+}
+
+.button{
+  margin-left: 75vw;
+  font-size: 1vw;
+}
+.xyz {
+  font-style: bold;
+  font-size: 4vw;
+  color: #6C4C35;
+  font-family: 'Playfair Display', sans-serif;
+  margin-right: 9vw;
+  margin-left: -4vw;
+
+}
+.distancebetweencontainer1{
+  margin-top: 45vh;
+}
+
+
+
+
+  
+ 
+  
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 850px) {
+
+  .bg{
+    background-image: url("../css/kk.png") ;
+    background-attachment: fixed;
+  }
+  .container1{
+  
+    margin-top: 0%;
+    padding: 0;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+  width: 100%;
+
+   
+    height: 60vh;
+  
+  }
+
+  .container2{
+  
+    margin-top: 0%;
+    padding: 0;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+  width: 100%;
+
+   
+  height: 60vh;
+  
+  }
+  .button{
+    margin-right: 0vw;
+  }
+  
+  .designhead{
+    margin-top: -40vh;
+    font-size: 11vw;
+  }
+  .change{
+    font-size: 17vw;
+    margin-top: 0.6vw;
+    max-width: 100px;
+  }
+  
+  .wrapper{
+  
+   margin-top: 0%;
+    margin-right: 0%;
+  }
+  .card{
+    margin-top: 8%;
+    width: 84vw;
+    height: 45vh;
+    box-shadow: 3px 3px 2px 2px #776f6f;
+   
+  }
+  
+  .maintext{
+    margin-top: 2vh;
+   margin-left: 8vw;
+   max-height: 6vh;
+   font-size: 8vw;
+  
+  }
+
+  .maintext1{
+    margin-top: 2vh;
+   margin-left: 8vw;
+   max-height: 6vh;
+   font-size: 8vw;
+  
+  }
+  .p1{
+    
+    margin-left: 8vw;
+    font-size: 2.5vw;
+    margin-top: 3vh;
+   width: 79vw;
+    padding-right: 1vw;
+  }
+  .p1_1{
+    margin-left: 8vw;
+    margin-top: -0.5vh;
+  
+    font-size: 2vw;
+  }
+  
+  .logo{
+    font-size: 10vw;
+  }
+  .custom-toggler .navbar-toggler-icon
+  {
+    font-size: 3vw;
+    
+  }
+  .web{
+    display: none;
+  }
+  
+  .icon{
+    margin-left: 32%;
+  }
+  .bgline{
+   margin-left: 25%;
+   width:50%;
+   margin-block-end: 25%;
+  }
+  .fa{
+    font-size: 7vw;
+  }
+ 
+  .distancebetweencontainer{
+    margin-top: 5vh;
+  }
+  .textdiv{
+    text-align: unset;
+  }
+  .textdiv{
+    margin-top: unset;
+  }
+
+  .p2{
+    
+    margin-left: 8vw;
+    font-size: 2.5vw;
+    margin-top: 3vh;
+    width: 85vw;
+    padding-right: 1.5vw;
+    text-align: unset;
+  }
+  .p1_2{
+    margin-left: 8vw;
+    margin-top: -0.5vh;
+  
+    font-size: 2vw;
+  }
+
+  .fa{
+    margin-top: 6vh;
+  }
+  .bgline{
+    border: 3px;
+  }
+  .distancebetweencontainer1{
+    margin-top: 5vh;
+  }
+ 
+  
+
+}
+
+
+
+
+
+
+
+
+
+  
+@media(max-width :520px){
+  .button{
+    margin-left: 70%;
+  }
+.bg{
+  background-image: url("fff.png");
+  background-size: fit;
+  height:55%;
+  background-attachment: fixed;
+
+}
+.container1{
+  
+  margin-top: 0%;
+  padding: 0;
+  margin-right: 0%;
+  margin-left: 0%;
+  width: 100%;
+  height: 47vh;
+
+}
+.container2{
+  
+  margin-top: 0%;
+  padding: 0;
+  margin-top: 0%;
+  margin-right: 0%;
+  margin-left: 0%;
+width: 100%;
+
+ 
+height: 47vh;
+
+}
+
+.designhead{
+  margin-top: -20vh;
+  font-size: 9vw;
+}
+.change{
+  font-size: 15.5vw;
+  margin-top: 0.6vw;
+  max-width: 100px;
+}
+
+.wrapper{
+
+ margin-top: 0%;
+  margin-right: 0%;
+}
+.card{
+  margin-top: 8%;
+  width: 84vw;
+  height: 38vh;
+  box-shadow: 3px 3px 2px 2px #776f6f;
+ 
+}
+
+.maintext{
+  margin-top: 2vh;
+ margin-left: 8vw;
+ max-height: 6vh;
+ font-size: 10vw;
+
+}
+.maintext1{
+  margin-top: 2vh;
+ margin-left: 8vw;
+ max-height: 6vh;
+ font-size: 10vw;
+
+}
+.p1{
+  
+  margin-left: 8vw;
+  font-size: 3vw;
+  margin-top: 0.5vh;
+  width: 87vw;
+  padding-right: 1vw;
+}
+
+.p2{
+    
+  margin-left: 8vw;
+  font-size: 3vw;
+  margin-top: 0.5vh;
+  width: 87vw;
+  padding-right: 1vw;
+  text-align: unset;
+}
+
+.p1_1{
+  margin-left: 8vw;
+  margin-top: -0.5vh;
+
+  font-size: 3vw;
+}
+
+.logo{
+  font-size: 12vw;
+}
+.custom-toggler .navbar-toggler-icon
+{
+  font-size: 3.5vw;
+}
+.web{
+  display: none;
+}
+
+.icon{
+  margin-left: 26vw;
+}
+.bgline{
+  margin-left: 25%;
+   width:50%;
+   margin-block-end: 25%;
+}
+
+.distancebetweencontainer{
+  margin-top: 5vh;
+}
+.textdiv{
+  text-align: unset;
+}
+
+.p1_2{
+  margin-left: 8vw;
+  margin-top: -0.5vh;
+
+  font-size: 3vw;
+}
+.fa{
+  margin-top: 6vh;
+}
+.bgline{
+  border: 3px;
+}
+
+.distancebetweencontainer1{
+  margin-top: 5vh;
+}
+
+
+
+
+}
+
+@media(max-width :375px){
+
+  .button{
+    margin-left: 67%;
+  }
+  .bg{
+    background-image: url("fff.png");
+    background-size: fit;
+    height:55%;
+    background-attachment: fixed;
+  
+  }
+  .container1{
+    
+    margin-top: 0%;
+    padding: 0;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+    height: 47vh;
+  
+  }
+
+  .container2{
+  
+    margin-top: 0%;
+    padding: 0;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+  width: 100%;
+  height: 47vh;
+
+   
+   
+  
+  }
+  
+  .designhead{
+    margin-top: -20vh;
+    font-size: 9vw;
+  }
+  .change{
+    font-size: 15.5vw;
+    margin-top: 0.6vw;
+    max-width: 100px;
+  }
+  
+  .wrapper{
+  
+   margin-top: 0%;
+    margin-right: 0%;
+  }
+  .card{
+    margin-top: 8%;
+    width: 84vw;
+    height: 38vh;
+    box-shadow: 3px 3px 2px 2px #776f6f;
+   
+  }
+  
+  .maintext{
+    margin-top: 2vh;
+   margin-left: 8vw;
+   font-size: 10vw;
+  
+  }
+  .maintext1{
+    margin-top: 2vh;
+   margin-left: 8vw;
+   font-size: 10vw;
+  
+  }
+  .p1{
+    
+    margin-left: 8vw;
+    font-size: 3vw;
+    width: 85vw;
+    padding-right: 0.8vw;
+    max-height: 3vh;
+    margin-top: 1vw;
+  }
+  .p1_1{
+    margin-left: 8vw;
+    margin-top: 0vh;
+  
+    font-size: 3vw;
+  }
+  
+  .logo{
+    font-size: 12vw;
+  }
+  .custom-toggler .navbar-toggler-icon
+  {
+    font-size: 3.5vw;
+  }
+  .bgline{
+    margin-left: 25%;
+   width:50%;
+   margin-block-end: 25%;
+  }
+
+  .fa{
+    font-size: 6vw;
+    
+  }
+
+  .web{
+    display:none;
+  }
+  .distancebetweencontainer{
+    margin-top: 5vh;
+  }
+
+  .textdiv{
+    text-align: unset;
+   }
+   .p2{
+    
+    margin-left: 8vw;
+    font-size: 3vw;
+    width: 85vw;
+    margin-top: 0vh;
+    text-align: unset;
+  
+    
+    padding-right: 0.8vw;
+  }
+  .p1_2{
+    margin-left: 8vw;
+    margin-top: -0.5vh;
+  
+    font-size: 3vw;
+  }
+  .fa{
+    margin-top: 4vh;
+  }
+  .bgline{
+    border: 3px;
+  }
+
+  .distancebetweencontainer1{
+    margin-top: 5vh;
+  }
+  
+  
+    
+  }
+  
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+   
+   
+   /* ---- stats.js ---- */
+   
+   .count-particles{
+     background: #000022;
+     position: absolute;
+     top: 48px;
+     left: 0;
+     width: 80px;
+     color: #13E8E9;
+     font-size: .8em;
+     text-align: left;
+     text-indent: 4px;
+     line-height: 14px;
+     padding-bottom: 2px;
+     font-family: Helvetica, Arial, sans-serif;
+     font-weight: bold;
+   }
+   
+   .js-count-particles{
+     font-size: 1.1em;
+   }
+   
+   #stats,
+   .count-particles{
+     -webkit-user-select: none;
+     margin-top: 5px;
+     margin-left: 5px;
+   }
+   
+   #stats{
+     border-radius: 3px 3px 0 0;
+     overflow: hidden;
+   }
+   
+   .count-particles{
+     border-radius: 0 0 3px 3px;
+   }
+   
+   
+   /* ---- particles.js container ---- */
+   
+   #particles-js{
+     width: 100%;
+     height: 100%;
+     background-image: url('');
+     background-size: cover;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+   }
+  
